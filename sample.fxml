@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="324.0" prefWidth="600.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btn_1" layoutX="22.0" layoutY="212.0" mnemonicParsing="false" onAction="#btn_1_ch" text="Заполнить" />
+            <Button fx:id="btn_2" layoutX="108.0" layoutY="212.0" mnemonicParsing="false" onAction="#btn_2_ch" text="Выполнить" />
+            <TableView fx:id="tbl" layoutX="-1.0" layoutY="-7.0" prefHeight="200.0" prefWidth="600.0">
+              <columns>
+                <TableColumn fx:id="c1" prefWidth="104.66665399074554" text="C1" />
+                <TableColumn fx:id="c2" minWidth="0.0" prefWidth="120.00000762939453" text="C2" />
+                  <TableColumn fx:id="c3" prefWidth="127.99998474121094" text="C3" />
+                  <TableColumn fx:id="c4" prefWidth="123.33331298828125" text="C4" />
+                  <TableColumn fx:id="c5" prefWidth="122.66665649414062" text="C5" />
+              </columns>
+            </TableView>
+            <TextArea fx:id="txt_min" layoutX="508.0" layoutY="218.0" prefHeight="38.0" prefWidth="77.0" />
+            <TextArea fx:id="txt_max" layoutX="347.0" layoutY="218.0" prefHeight="38.0" prefWidth="68.0" />
+            <Label layoutX="306.0" layoutY="229.0" text="MAX" />
+            <Label layoutX="472.0" layoutY="228.0" text="MIN" />
+            <TextArea layoutX="4.0" layoutY="262.0" prefHeight="50.0" prefWidth="585.0" text="Если максимальный элемент в таблице больше минимального в 10 раз, то все нули заменить&#10;единицами, а отрицательные числа заменить на их значения по модулю." />
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
